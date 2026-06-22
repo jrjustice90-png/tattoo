@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>TattooinkDro | Estudio Profesional de Tatuajes y Piercings en Bogotá</title>
+    <meta name="description" content="Estudio de tatuajes y piercings en Bogotá. Diseños únicos, cover-ups y perforaciones con estrictos protocolos de bioseguridad. Agenda tu sesión hoy.">
+    <meta name="keywords" content="tatuajes Bogotá, piercings Bogotá, estudio de tatuajes, TattooinkDro, tatuador profesional, perforaciones seguras">
+    <meta name="author" content="WILLIAM EDILBERTO POVEDA ORTIZ">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://tudominio.com/">
+    
+    <meta property="og:title" content="TattooinkDro | Arte en tu piel con seguridad">
+    <meta property="og:description" content="Especialistas en tatuajes personalizados y piercings en Bogotá. Cumplimos todas las normativas de bioseguridad.">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="es_CO">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "TattooParlor",
+      "name": "TattooinkDro",
+      "image": "https://images.unsplash.com/photo-1560707303-4e980ce876ad?auto=format&fit=crop&w=800&q=80",
+      "description": "Estudio profesional de tatuajes y piercings en Bogotá.",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Cl. 22j # 100-66",
+        "addressLocality": "Bogotá",
+        "addressCountry": "CO"
+      },
+      "telephone": "+573145678956",
+      "email": "jrjustice90@gmail.com",
+      "openingHours": "Mo-Su 08:00-17:00",
+      "founder": {
+        "@type": "Person",
+        "name": "WILLIAM EDILBERTO POVEDA ORTIZ"
+      }
+    }
+    </script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700;900&display=swap" rel="stylesheet">
+    
+    <style>
+        /* ================= CSS INTEGRADO ================= */
+        :root {
+            --bg-dark: #121212;
+            --bg-card: #1e1e1e;
+            --accent: #ef4444; /* Rojo vibrante / Tinta */
+            --accent-hover: #dc2626;
+            --text-light: #f3f4f6;
+            --text-muted: #9ca3af;
+            --font-main: 'Montserrat', sans-serif;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: var(--font-main);
+        }
+
+        html { scroll-behavior: smooth; }
+
+        body {
+            background-color: var(--bg-dark);
+            color: var(--text-light);
+            line-height: 1.6;
+        }
+
+        /* Navegación */
+        header {
+            background-color: rgba(18, 18, 18, 0.95);
+            padding: 1.2rem 5%;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #333;
+            backdrop-filter: blur(5px);
+        }
+
+        .logo {
+            font-size: 1.8rem;
+            font-weight: 900;
+            color: var(--text-light);
+            text-decoration: none;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+        .logo span { color: var(--accent); }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+        }
+
+        .nav-links a {
+            color: var(--text-light);
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover { color: var(--accent); }
+
+        .btn-cta {
+            background-color: var(--accent);
+            color: #fff;
+            padding: 0.8rem 1.8rem;
+            border: none;
+            border-radius: 4px;
+            font-weight: 700;
+            text-decoration: none;
+            text-transform: uppercase;
+            transition: background 0.3s, transform 0.2s;
+            cursor: pointer;
+            display: inline-block;
+            text-align: center;
+        }
+
+        .btn-cta:hover {
+            background-color: var(--accent-hover);
+            transform: translateY(-2px);
+        }
+
+        /* Hero Section */
+        .hero {
+            padding: 160px 5% 100px;
+            text-align: center;
+            background: linear-gradient(rgba(18, 18, 18, 0.85), rgba(18, 18, 18, 0.95)), 
+                        url('https://images.unsplash.com/photo-1598371839696-5c5bb00bdc28?auto=format&fit=crop&w=1920&q=80') center/cover no-repeat;
+            min-height: 80vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            font-weight: 900;
+            margin-bottom: 1.5rem;
+            line-height: 1.2;
+            max-width: 900px;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            color: var(--text-muted);
+            max-width: 700px;
+            margin: 0 auto 2.5rem;
+        }
+
+        /* Secciones */
+        .section { padding: 80px 5%; }
+        
+        .section-title {
+            text-align: center;
+            font-size: 2.5rem;
+            font-weight: 800;
+            margin-bottom: 3rem;
+            text-transform: uppercase;
+        }
+        .section-title span { color: var(--accent); }
+
+        /* Grid Cards */
+        .grid-3 {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .card {
+            background-color: var(--bg-card);
+            padding: 2.5rem 2rem;
+            border-radius: 8px;
+            text-align: center;
+            border: 1px solid #333;
+            transition: transform 0.3s;
+        }
+
+        .card:hover { transform: translateY(-5px); border-color: var(--accent); }
+        .card h3 { font-size: 1.4rem; margin-bottom: 1rem; color: var(--text-light); }
+        .card p { color: var(--text-muted); font-size: 0.95rem; }
+        .icon { font-size: 2.5rem; color: var(--accent); margin-bottom: 1rem; display: block; }
+
+        /* Contacto */
+        .contact-wrapper {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            background-color: var(--bg-card);
+            padding: 3rem;
+            border-radius: 8px;
+            border: 1px solid #333;
+        }
+
+        .company-info h3 {
+            font-size: 1.8rem;
+            margin-bottom: 1.5rem;
+            color: var(--accent);
+        }
+
+        .company-info p {
+            margin-bottom: 1rem;
+            font-size: 1rem;
+            color: var(--text-light);
+        }
+
+        .company-info strong { color: var(--text-muted); }
+
+        .form-group { margin-bottom: 1.2rem; }
+        
+        .form-control {
+            width: 100%;
+            padding: 1rem;
+            background-color: var(--bg-dark);
+            border: 1px solid #444;
+            color: var(--text-light);
+            border-radius: 4px;
+            font-size: 1rem;
+            outline: none;
+            transition: border-color 0.3s;
+        }
+
+        .form-control:focus { border-color: var(--accent); }
+
+        /* Transparencia / Trust */
+        .trust-banner {
+            background-color: var(--accent);
+            color: #fff;
+            text-align: center;
+            padding: 3rem 5%;
+        }
+        
+        .trust-banner h3 { font-size: 2rem; margin-bottom: 1rem; }
+
+        /* Footer */
+        footer {
+            background-color: #0a0a0a;
+            padding: 3rem 5% 2rem;
+            text-align: center;
+            border-top: 1px solid #222;
+        }
+
+        .footer-links { margin-top: 1.5rem; }
+        .footer-links a {
+            color: var(--text-muted);
+            text-decoration: none;
+            margin: 0 1rem;
+            font-size: 0.9rem;
+            transition: color 0.3s;
+        }
+        .footer-links a:hover { color: var(--accent); }
+        .legal-disclaimer { margin-top: 1.5rem; font-size: 0.8rem; color: #555; }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .nav-links { display: none; }
+            .hero h1 { font-size: 2.5rem; }
+            .contact-wrapper { grid-template-columns: 1fr; gap: 2rem; }
+            .company-info { order: 2; }
+            .contact-form { order: 1; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <a href="#" class="logo">Tattooink<span>Dro</span></a>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#beneficios">Beneficios</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+        <a href="#contacto" class="btn-cta">Agendar Cita</a>
+    </header>
+
+    <section class="hero">
+        <h1>Expresa tu estilo con <span>Arte Profesional</span></h1>
+        <p>Especialistas en tatuajes y piercings en Bogotá. Transformamos tus ideas en piezas únicas bajo los más estrictos estándares de bioseguridad. Tu piel merece lo mejor.</p>
+        <a href="#contacto" class="btn-cta" style="font-size: 1.1rem; padding: 1rem 2.5rem;">Cotiza tu Tatuaje o Piercing Hoy</a>
+    </section>
+
+    <section id="beneficios" class="section">
+        <h2 class="section-title">¿Por qué elegir <span>TattooinkDro</span>?</h2>
+        <div class="grid-3">
+            <div class="card">
+                <span class="icon">🛡️</span>
+                <h3>Bioseguridad Total</h3>
+                <p>Utilizamos agujas e instrumental 100% esterilizado y desechable de un solo uso. La salud y seguridad de tu piel es nuestra prioridad absoluta.</p>
+            </div>
+            <div class="card">
+                <span class="icon">🎨</span>
+                <h3>Diseños Personalizados</h3>
+                <p>No copiamos. Trabajamos contigo para crear piezas originales que se adapten a tu anatomía y representen exactamente lo que deseas transmitir.</p>
+            </div>
+            <div class="card">
+                <span class="icon">✨</span>
+                <h3>Asesoría Integral</h3>
+                <p>Te acompañamos desde la idea inicial hasta el proceso de cicatrización, entregándote guías claras para el cuidado óptimo de tu tatuaje o piercing.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="servicios" class="section" style="background-color: var(--bg-card);">
+        <h2 class="section-title">Nuestros <span>Servicios</span></h2>
+        <div class="grid-3">
+            <div class="card" style="background-color: var(--bg-dark);">
+                <h3>🖋️ Tatuajes a Medida</h3>
+                <p>Dominamos diversos estilos: Blackwork, Líneas Finas (Fine Line), Sombras, Tradicional y Realismo. Cuéntanos tu idea y la haremos realidad.</p>
+            </div>
+            <div class="card" style="background-color: var(--bg-dark);">
+                <h3>💎 Piercings Profesionales</h3>
+                <p>Perforaciones corporales y faciales seguras, utilizando joyería de alta calidad (titanio grado implante y acero quirúrgico) para evitar alergias.</p>
+            </div>
+            <div class="card" style="background-color: var(--bg-dark);">
+                <h3>♻️ Cover-Ups & Retoques</h3>
+                <p>Damos nueva vida a tatuajes antiguos o cubrimos diseños no deseados con técnicas avanzadas para garantizar un resultado limpio y estético.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="trust-banner">
+        <h3>Estudio Verificado y Regulado en Bogotá</h3>
+        <p style="max-width: 800px; margin: 0 auto; font-size: 1.1rem; font-weight: 500;">
+            Operamos con total transparencia y cumplimos con todas las normativas sanitarias locales exigidas para estudios de modificación corporal. No realizamos procedimientos a menores de edad sin acompañamiento y consentimiento legal.
+        </p>
+    </section>
+
+    <section id="contacto" class="section">
+        <h2 class="section-title">Reserva tu <span>Sesión</span></h2>
+        <div class="contact-wrapper">
+            <div class="contact-form">
+                <form id="leadForm">
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="nombre" placeholder="Tu Nombre Completo" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" class="form-control" id="telefono" placeholder="Tu Teléfono / WhatsApp" required>
+                    </div>
+                    <div class="form-group">
+                        <select class="form-control" id="servicio" required>
+                            <option value="" disabled selected>¿Qué servicio buscas?</option>
+                            <option value="tatuaje">Cotizar un Tatuaje</option>
+                            <option value="piercing">Hacerme un Piercing</option>
+                            <option value="coverup">Cover-up / Retoque</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <textarea class="form-control" id="mensaje" rows="4" placeholder="Describe tu idea (tamaño aproximado, zona del cuerpo, estilo)..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn-cta" style="width: 100%;">Solicitar Cotización</button>
+                    <p style="font-size: 0.85rem; margin-top: 15px; color: var(--text-muted); text-align: center;">
+                        Al enviar, aceptas nuestra Política de Privacidad. No enviamos spam.
+                    </p>
+                </form>
+            </div>
+
+            <div class="company-info">
+                <h3>Información del Estudio</h3>
+                <p>Escríbenos para agendar tu cita, resolver dudas o visitar nuestro estudio.</p>
+                <br>
+                <p><strong>Titular / Artista:</strong> WILLIAM EDILBERTO POVEDA ORTIZ</p>
+                <p><strong>Ubicación:</strong> Cl. 22j # 100-66, Bogotá, Colombia</p>
+                <p><strong>Teléfono:</strong> 314 567 8956</p>
+                <p><strong>Correo:</strong> jrjustice90@gmail.com</p>
+                <p><strong>Horario de Atención:</strong> Todos los días de 8:00 am a 5:00 pm</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p style="color: var(--text-light); font-weight: 700; margin-bottom: 10px;">TattooinkDro</p>
+        <p style="color: var(--text-muted);">© 2024 - Operado por WILLIAM EDILBERTO POVEDA ORTIZ. Todos los derechos reservados.</p>
+        <div class="footer-links">
+            <a href="politica-de-privacidad.html">Política de Privacidad</a>
+            <a href="terminos-y-condiciones.html">Términos y Condiciones</a>
+        </div>
+        <p class="legal-disclaimer">Este sitio web no realiza cobros en línea. Todo pago se acuerda directamente en el estudio físico.</p>
+    </footer>
+
+    <script>
+        // Manejo del formulario respetando la experiencia del usuario (sin popups invasivos)
+        document.getElementById('leadForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Simulación de envío exitoso
+            const btn = this.querySelector('button[type="submit"]');
+            const originalText = btn.innerText;
+            
+            btn.innerText = "¡Solicitud Enviada!";
+            btn.style.backgroundColor = "#16a34a"; // Verde éxito
+            
+            setTimeout(() => {
+                alert('Hemos recibido tu solicitud de cotización. Nos pondremos en contacto contigo al número proporcionado para afinar detalles.');
+                this.reset();
+                btn.innerText = originalText;
+                btn.style.backgroundColor = "";
+            }, 500);
+        });
+    </script>
+</body>
+</html>
